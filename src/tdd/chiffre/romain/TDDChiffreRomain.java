@@ -42,6 +42,9 @@ public class TDDChiffreRomain {
         if(number == 100)
             return "C";
         
-        return "D";
+        if(number == 500)
+            return "D";
+    
+        return "M";
     }
 }
