@@ -38,12 +38,14 @@ public class TDDChiffreRomain {
         baseRomanNumber.put(500, "D");
         baseRomanNumber.put(1000, "M");
         
-        if(number == 2)
-            return "II";
-        
-        if(number == 3)
-            return "III";
-        
+        if(number <= 3){
+            String result = "";
+            for(int i = 0; i < number; i++ ){
+                result += baseRomanNumber.get(1);
+            }
+            return result;
+        }
+            
         return baseRomanNumber.get(number);
     }
 }
