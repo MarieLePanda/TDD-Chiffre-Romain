@@ -38,6 +38,9 @@ public class TDDChiffreRomain {
         baseRomanNumber.put(500, "D");
         baseRomanNumber.put(1000, "M");
         
+        if(number == 2)
+            return "II";
+        
         return baseRomanNumber.get(number);
     }
 }

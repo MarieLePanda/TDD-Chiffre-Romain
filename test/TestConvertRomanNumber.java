@@ -91,7 +91,7 @@ public class TestConvertRomanNumber {
     @Test
     public void number2(){         
         String expect = "II";
-        String result = TDDChiffreRomain.ConvertRomanNumber(1000);
+        String result = TDDChiffreRomain.ConvertRomanNumber(2);
         assertEquals(expect, result);
     }
 }
