@@ -46,14 +46,13 @@ public class TDDChiffreRomain {
             return result;
         }
         
-        if(number == 6)
-            return "VI";
-        
-        if(number == 7)
-            return "VII";
-        
-        if(number == 8)
-            return "VIII";
+        if(number <= 8){
+            String result = "V";
+            for(int i = 5; i < number; i++ ){
+                result += baseRomanNumber.get(1);
+            }
+            return result;
+        }
         
         return baseRomanNumber.get(number);
     }
