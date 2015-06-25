@@ -94,4 +94,10 @@ public class TestConvertRomanNumber {
         String result = TDDChiffreRomain.ConvertRomanNumber(2);
         assertEquals(expect, result);
     }
+    @Test
+    public void number3(){         
+        String expect = "III";
+        String result = TDDChiffreRomain.ConvertRomanNumber(3);
+        assertEquals(expect, result);
+    }
 }
