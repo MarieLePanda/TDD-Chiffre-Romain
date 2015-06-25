@@ -41,17 +41,21 @@ public class TestConvertRomanNumber {
     
     @Test
     public void number1() {
-    
         String expect = "I";
         String result = TDDChiffreRomain.ConvertRomanNumber(1);
         assertEquals(expect, result);
-        
     }
     
     @Test
-    public void number2(){
-         
+    public void number5(){         
         String expect = "V";
+        String result = TDDChiffreRomain.ConvertRomanNumber(5);
+        assertEquals(expect, result);
+    }
+
+    @Test
+    public void number10(){         
+        String expect = "X";
         String result = TDDChiffreRomain.ConvertRomanNumber(5);
         assertEquals(expect, result);
     }
