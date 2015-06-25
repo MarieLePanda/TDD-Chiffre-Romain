@@ -6,6 +6,8 @@
 
 package tdd.chiffre.romain;
 
+import java.util.HashMap;
+
 /**
  *
  * @author Lucas
@@ -27,24 +29,15 @@ public class TDDChiffreRomain {
     
     public static String ConvertRomanNumber(int number){
         
-        if(number == 1)
-            return "I";
+        HashMap<Integer, String> baseRomanNumber = new HashMap<Integer, String>();
+        baseRomanNumber.put(1, "I");
+        baseRomanNumber.put(5, "V");
+        baseRomanNumber.put(10, "X");
+        baseRomanNumber.put(50, "L");
+        baseRomanNumber.put(100, "C");
+        baseRomanNumber.put(500, "D");
+        baseRomanNumber.put(1000, "M");
         
-        if(number == 5)
-            return "V";
-        
-        if(number == 10)
-            return "X";
-        
-        if(number == 50)
-            return "L";
-        
-        if(number == 100)
-            return "C";
-        
-        if(number == 500)
-            return "D";
-    
-        return "M";
+        return baseRomanNumber.get(number);
     }
 }
