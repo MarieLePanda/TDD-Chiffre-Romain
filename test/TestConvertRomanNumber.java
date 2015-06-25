@@ -47,4 +47,12 @@ public class TestConvertRomanNumber {
         assertEquals(expect, result);
         
     }
+    
+    @Test
+    public void number2(){
+         
+        String expect = "V";
+        String result = TDDChiffreRomain.ConvertRomanNumber(5);
+        assertEquals(expect, result);
+    }
 }
