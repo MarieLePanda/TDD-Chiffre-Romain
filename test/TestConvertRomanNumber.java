@@ -107,4 +107,11 @@ public class TestConvertRomanNumber {
         String result = TDDChiffreRomain.ConvertRomanNumber(6);
         assertEquals(expect, result);
     }
+    
+    @Test
+    public void number7(){         
+        String expect = "VII";
+        String result = TDDChiffreRomain.ConvertRomanNumber(7);
+        assertEquals(expect, result);
+    }
 }
