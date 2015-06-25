@@ -100,4 +100,11 @@ public class TestConvertRomanNumber {
         String result = TDDChiffreRomain.ConvertRomanNumber(3);
         assertEquals(expect, result);
     }
+    
+    @Test
+    public void number6(){         
+        String expect = "VI";
+        String result = TDDChiffreRomain.ConvertRomanNumber(6);
+        assertEquals(expect, result);
+    }
 }
