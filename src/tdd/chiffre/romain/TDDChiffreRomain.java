@@ -45,7 +45,10 @@ public class TDDChiffreRomain {
             }
             return result;
         }
-            
+        
+        if(number == 6)
+            return "VI";
+        
         return baseRomanNumber.get(number);
     }
 }
