@@ -27,6 +27,9 @@ public class TDDChiffreRomain {
     
     public static String ConvertRomanNumber(int number){
         
-        return "I";
+        if(number == 1)
+            return "I";
+        
+        return "V";
     }
 }
