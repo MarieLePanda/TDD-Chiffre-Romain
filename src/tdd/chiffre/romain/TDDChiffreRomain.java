@@ -49,6 +49,9 @@ public class TDDChiffreRomain {
         if(number == 6)
             return "VI";
         
+        if(number == 7)
+            return "VII";
+        
         return baseRomanNumber.get(number);
     }
 }
