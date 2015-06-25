@@ -36,6 +36,9 @@ public class TDDChiffreRomain {
         if(number == 10)
             return "X";
         
-        return "L";
+        if(number == 50)
+            return "L";
+        
+        return "C";
     }
 }
