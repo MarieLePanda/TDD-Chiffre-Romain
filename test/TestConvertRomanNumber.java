@@ -59,4 +59,11 @@ public class TestConvertRomanNumber {
         String result = TDDChiffreRomain.ConvertRomanNumber(10);
         assertEquals(expect, result);
     }
+    
+    @Test
+    public void number50(){         
+        String expect = "L";
+        String result = TDDChiffreRomain.ConvertRomanNumber(50);
+        assertEquals(expect, result);
+    }
 }
